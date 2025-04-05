@@ -1,0 +1,22 @@
+body {
+  background-color: orange; /* changer arrière page du corp */
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;    /* centre verticalement */
+  align-items: center;        /* centre horizontalement */
+  height: 100vh;              /* hauteur de la fenêtre */
+  margin: 0;
+}
+
+footer {
+  position: fixed; /*le place par rapport à l'écran, et non au reste de la page*/
+  bottom: 0; /*le colle tout en bas*/
+  left: 0;
+  padding: 1rem;
+  background-color: #0077b6;
+  color: white;
+}

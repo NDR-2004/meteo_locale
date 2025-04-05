@@ -1,0 +1,12 @@
+# Fichiers système
+.DS_Store
+__pycache__/
+
+# Fichiers Python
+*.pyc
+*.pyo
+
+# Cache et envs
+.env
+*.env
+.venv/

@@ -1,0 +1,36 @@
+<!--code HTML site métérologique -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Météo Locale</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='CSS_API_meteo.css') }}"> <!-- fichier CSS externe -->
+</head>
+<body>
+  <header>
+    <h1>🌤️ Ma météo en temps réel</h1>
+  </header>
+
+  <main>
+    <section id="search">
+      <input type="text" id="ville" placeholder="Entrez une ville">
+      <button id="rechercher">Rechercher</button>
+    </section>
+
+    <section id="resultats">
+      <h2>Météo actuelle :</h2>
+      <p id="description"></p>
+      <p id="temperature"></p>
+      <p id="vent"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 - Nahem Rigaldies</p>
+  </footer>
+
+  <!-- Le script JS sera ajouté ici plus tard -->
+  <script src="{{ url_for('static', filename='JS_API_meteo.js') }}"></script> <!-- Ton JS -->
+</body>
+</html>
