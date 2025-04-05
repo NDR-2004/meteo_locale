@@ -1,7 +1,7 @@
 document.getElementById("rechercher").addEventListener("click", () => {
   const ville = document.getElementById("ville").value;
 
-  fetch(`http://127.0.0.1:8000/api/meteo?ville=${ville}`)
+  fetch(`/api/meteo?ville=${ville}`)
     .then(res => res.json())
     .then(data => {
       if (data.error) {
